@@ -50,6 +50,37 @@ public class MainActivity extends ActionBarActivity {
                     .add(R.id.container, new ForecastFragment())
                     .commit();
         }
+        Log.i("CREATE SUNSHINE", "!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.i("PAUSE SUNSHINE", "!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.i("STOP SUNSHINE", "!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.i("Resume SUNSHINE", "!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.i("Start SUNSHINE", "!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.i("destroy SUNSHINE", "!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
     }
 
     @Override
